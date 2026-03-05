@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>APANConf 2026</title>
+  <meta name="description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing. Submit your original research and be part of shaping the future of technology.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="APANConf 2026">
+  <meta property="og:description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing.">
+  <meta property="og:image" content="./hero.jpg">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="APANConf 2026">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="APANConf 2026">
+  <meta name="twitter:description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing.">
+  <meta name="twitter:image" content="./hero.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#e7a20e',
+            dark: '#000000',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- UI tweaks -->
+  <style>
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+
+
+<body class="font-sans bg-white text-gray-900">
+
+<header id="header" class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <nav class="flex justify-between items-center py-5">
+            <!-- Logo -->
+            <a href="./" class="text-2xl font-bold text-dark">
+                <span class="text-primary">APANConf 2026</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#keynote-speakers" class="nav-link">Keynote Speakers</a>
+                <a href="#important-dates" class="nav-link">Important Dates</a>
+                <a href="#guidelines" class="nav-link">Guidelines</a>
+                <a href="./committee.html" class="nav-link">Organizing Committee</a>
+                <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
+            </div>
+
+            <!-- Desktop Button -->
+            <div class="hidden md:block">
+                <a href="#call-for-papers" class="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg">
+                    Submit Paper
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="open-menu" class="md:hidden text-gray-700">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Full Screen Mobile Menu -->
+<div id="mobile-menu"
+     class="fixed inset-0 bg-white z-[100] hidden flex-col">
+
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center px-6 py-5 border-b">
+        <span class="text-2xl font-bold">
+            <span class="text-primary">APANConf 2026</span>
+        </span>
+
+        <button id="close-menu" class="text-gray-700">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+        <a href="#keynote-speakers" class="nav-link mobile-link">Keynote Speakers</a>
+        <a href="#important-dates" class="nav-link mobile-link">Important Dates</a>
+        <a href="#guidelines" class="nav-link mobile-link">Guidelines</a>
+        <a href="committee.html" class="nav-link mobile-link">Organizing Committee</a>
+        <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
+
+        <a href="#call-for-papers"
+           class="mt-6 px-8 py-3 bg-primary text-white font-semibold rounded-lg mobile-link">
+            Submit Paper
+        </a>
+    </div>
+
+</div>
+ 
+<section id="hero-section"
+    class="relative bg-cover bg-center bg-no-repeat"
+    style="background-image: url('./hero.jpg');">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/20"></div>
+
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div class="text-white">
+                <div class="inline-block px-4 py-2 bg-primary/20 rounded-full mb-6">
+                    <span class="text-primary font-semibold text-sm">APANConf 2026</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <!-- International Conference on -->
+                    <span class="text-primary">AI, HPC, and Resilient Systems</span>
+                </h1>
+
+                <p class="text-base sm:text-lg lg:text-xl text-gray-200 mb-8 leading-relaxed">
+                    Join leading researchers, practitioners, and innovators in exploring the convergence
+                    of Artificial Intelligence and High Performance Computing. Submit your original research
+                    and be part of shaping the future of technology.
+                </p>
+
+                <!-- Date & Location -->
+                <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-8 mb-10 space-y-4 sm:space-y-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-calendar text-primary text-lg"></i>
+                        <span class="font-medium">August 10–14, 2026</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-location-dot text-primary text-lg"></i>
+                        <span class="font-medium">Auckland, New Zeland</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#call-for-papers"
+                       class="px-8 py-4 bg-primary text-white font-semibold rounded-lg inline-flex items-center justify-center hover:bg-opacity-90 transition">
+                        Submit Your Paper
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+
+                    <a href="#guidelines"
+                       class="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg text-center hover:bg-white hover:text-dark transition">
+                        View Guidelines
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Stats Card -->
+            <div class="relative">
+                <div class="absolute inset-0 bg-primary/20 rounded-3xl rotate-3"></div>
+
+                <div class="relative bg-white p-6 sm:p-8 rounded-2xl shadow-2xl">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="stat-card">
+                            <div class="stat-number text-3xl font-bold text-dark mb-1">75+</div>
+                            <div class="stat-label text-gray-600 font-medium">Conference Participants</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number text-3xl font-bold text-dark mb-1">50+</div>
+                            <div class="stat-label text-gray-600 font-medium">Research Papers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number text-3xl font-bold text-dark mb-1">18+</div>
+                            <div class="stat-label text-gray-600 font-medium">Countries</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number text-3xl font-bold text-dark mb-1">4</div>
+                            <div class="stat-label text-gray-600 font-medium">Keynotes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="keynote-speakers" class="py-16 sm:py-20 bg-gradient-to-br from-dark via-gray-900 to-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Header -->
+        <div class="text-center mb-12 sm:mb-16">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 border border-primary/40 mb-5">
+                <span class="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-primary">Keynote Speakers</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">
+                Visionary leaders shaping the<br class="hidden sm:inline"> future of AI & digital society
+            </h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
+                Hear from globally recognized pioneers at the intersection of information systems, AI, and public policy.
+            </p>
+        </div>
+
+        <!-- Speakers Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+            <!-- Professor Mark Sanderson -->
+            <article class="group relative bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-300">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+
+                <div class="relative">
+                    <div class="overflow-hidden">
+                        <img src="./1_MarkSandarson.webp" alt="Professor Mark Sanderson"
+                             class="w-full h-72 sm:h-80 object-cover object-center transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="relative p-6 sm:p-8">
+                    <div class="flex items-center justify-between gap-4 mb-3">
+                        <h3 class="text-2xl sm:text-3xl font-bold">Professor Mark Sanderson</h3>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/15 text-primary text-xs sm:text-sm font-semibold">
+                            Information Retrieval
+                        </span>
+                    </div>
+                    <p class="text-sm sm:text-base text-primary/80 font-medium mb-4">
+                        Dean of Research & Innovation, STEM College, RMIT University
+                    </p>
+                    <p class="text-sm sm:text-base text-gray-200 leading-relaxed mb-5">
+                        Mark Sanderson is a Professor of Information Retrieval and the Dean of Research and Innovation
+                        for the STEM College at RMIT University. A pioneering figure in search interfaces, he was the
+                        first to demonstrate the value of "snippets" in search results and co-founded the imageCLEF
+                        evaluation campaign. He has held senior leadership roles for flagship conferences including
+                        ACM SIGIR and CIKM and was inducted into the ACM SIGIR Academy in 2024 for his outstanding
+                        contributions to the field.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Information retrieval & web search
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Human–information interaction
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Recommender systems
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Information access
+                        </span>
+                    </div>
+
+                    <a href="https://www.rmit.edu.au/profiles/s/mark-sanderson"
+                       target="_blank"
+                       class="inline-flex items-center text-sm sm:text-base font-semibold text-primary hover:text-primary/80">
+                        View full profile
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Prof. Ramayya Krishnan -->
+            <article class="group relative bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-300">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+
+                <div class="relative">
+                    <div class="overflow-hidden">
+                        <img src="./2_ramayya-krishnan.jpg" alt="Prof. Ramayya Krishnan"
+                             class="w-full h-72 sm:h-80 object-cover object-center transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="relative p-6 sm:p-8">
+                    <div class="flex items-center justify-between gap-4 mb-3">
+                        <h3 class="text-2xl sm:text-3xl font-bold">Prof. Ramayya Krishnan</h3>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/15 text-primary text-xs sm:text-sm font-semibold">
+                            Digital Transformation & Policy
+                        </span>
+                    </div>
+                    <p class="text-sm sm:text-base text-primary/80 font-medium mb-4">
+                        W. W. & Ruth F. Cooper Professor, Heinz College & Engineering and Public Policy, Carnegie Mellon University
+                    </p>
+                    <p class="text-sm sm:text-base text-gray-200 leading-relaxed mb-5">
+                        Ramayya Krishnan is Dean Emeritus of Heinz College at Carnegie Mellon University and a globally
+                        recognized authority on the societal impact of digital technologies. He has founded multiple
+                        master’s programs and research centers, including the Block Center for Technology and Society,
+                        and currently leads the AI Measurement Science and Engineering Center (AIMSEC). A former
+                        President of INFORMS and a Fellow of the AAAS, he has advised the White House on AI initiatives
+                        and the future of work.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Digital transformation
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            AI governance & public policy
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Decision & data analytics
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-200">
+                            Future of work
+                        </span>
+                    </div>
+
+                    <a href="https://www.heinz.cmu.edu/faculty-research/profiles/krishnan-ramayya"
+                       target="_blank"
+                       class="inline-flex items-center text-sm sm:text-base font-semibold text-primary hover:text-primary/80">
+                        View full profile
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="call-for-papers" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Header -->
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">
+                Call for Papers
+            </h2>
+            <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                Original contributions are sought in topics under the theme:
+                AI, HPC, and Resilient Systems
+            </p>
+        </div>
+
+        <!-- Research Topics -->
+        <div class="grid grid-cols-1 gap-8 mb-12">
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 lg:p-10 rounded-2xl border border-gray-200 shadow-sm">
+
+                <h3 class="text-xl sm:text-2xl font-bold text-dark mb-6 flex items-center">
+                    <span class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-brain text-white text-xl"></i>
+                    </span>
+                    Research Topics
+                </h3>
+
+                <!-- <p class="text-gray-600 mb-8 text-lg">
+                    Topics may include but not be limited to:
+                </p> -->
+
+                <!-- Topics Grid (FIXED) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Future Internet, R&E Networks, and Infrastructure</h4>
+                                <!-- <p class="text-sm text-gray-600">Advanced computational modeling techniques</p> -->
+                            </div>
+                        </div>
+
+                        
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Digital Applications in Health, Agriculture, Education, and Environment</h4>
+                                <!-- <p class="text-sm text-gray-600">Intelligent vehicle systems</p> -->
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">AI, Machine Learning, and Vision Systems</h4>
+                                <!-- <p class="text-sm text-gray-600">Governance and regulatory frameworks</p> -->
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Policy, Ethics, and Regional Priorities in Digital Infrastructure</h4>
+                                <!-- <p class="text-sm text-gray-600">Bio-inspired computing systems</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">High-performance, Cloud, and Distributed Computing</h4>
+                                <!-- <p class="text-sm text-gray-600">Resource allocation and optimization</p> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="bg-gradient-to-r from-dark to-gray-800 text-white p-6 sm:p-8 lg:p-12 rounded-2xl shadow-xl mb-12">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-file-pdf text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-4">
+                            Submission Requirements
+                        </h3>
+                        <p class="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 leading-relaxed">
+                            Papers must be prepared using the IEEE Conference Proceedings Template
+                            and should not exceed six (6) pages on A4 size paper.
+                        </p>
+
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://edas.info/N34685"
+                               class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all" target="_blank">
+                                Submit via EDAS
+                                <i class="fa-solid fa-external-link ml-3"></i>
+                            </a>
+
+                            <a href="https://www.ieee.org/conferences/publishing/templates"
+                               class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-all" target="_blank">
+                                Download Template
+                                <i class="fa-solid fa-download ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Notes -->
+            <div class="bg-primary bg-opacity-5 border-2 border-primary p-6 sm:p-8 lg:p-10 rounded-2xl text-center">
+                <div class="flex items-start space-x-4 sm:space-x-6 text-center">
+                    <!-- <i class="fa-solid fa-circle-info text-primary text-4xl mt-1"></i> -->
+                    <div>
+                        <h4 class="text-xl sm:text-2xl font-bold text-dark mb-4 text-center" style="text-align: center;">Review papers will not be accepted.</h4>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+
+<section id="important-dates" class="py-16 sm:py-20 bg-gradient-to-br from-dark to-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Header -->
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Important Dates</h2>
+<!--             <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
+                Mark your calendar with these critical deadlines for the conference
+            </p> -->
+        </div>
+
+        <!-- Dates Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+            <!-- Card -->
+            <div class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 p-6 sm:p-8 rounded-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-calendar-days text-3xl text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Paper Submission Deadline</div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">April 01, 2026</h3>
+                        <p class="text-gray-300 text-base sm:text-lg">Final deadline for submitting full papers through EDAS system. No extensions will be granted.</p>
+                        <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
+                            <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">23:59 AoE</span>
+                            <!-- <span class="text-gray-400 text-sm">Anywhere on Earth</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 p-6 sm:p-8 rounded-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-bell text-3xl text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Notification of Acceptance</div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">May 15, 2026</h3>
+                        <p class="text-gray-300 text-base sm:text-lg">Authors will be notified about acceptance status and reviewer feedback via email.</p>
+                        <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
+                            <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">Email</span>
+                            <span class="text-gray-400 text-sm">Check your inbox</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 p-6 sm:p-8 rounded-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-file-circle-check text-3xl text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Camera-Ready Submission</div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">July 01, 2026</h3>
+                        <p class="text-gray-300 text-base sm:text-lg">Submit final camera-ready version incorporating all reviewer comments and suggestions.</p>
+                        <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
+                            <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">Final Version</span>
+                            <span class="text-gray-400 text-sm">No further changes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 p-6 sm:p-8 rounded-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-ticket text-3xl text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Registration Deadline</div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">July 10, 2026</h3>
+                        <p class="text-gray-300 text-base sm:text-lg">Early bird registration closes. At least one author must register for paper to be published.</p>
+                        <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
+                            <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">Required</span>
+                            <span class="text-gray-400 text-sm">For publication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Conference Dates Banner -->
+        <div class="bg-gradient-to-r from-primary to-yellow-600 p-6 sm:p-8 lg:p-10 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4 sm:gap-6">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-champagne-glasses text-4xl text-white"></i>
+                </div>
+                <div>
+                    <div class="text-white text-opacity-90 font-semibold mb-1 text-sm uppercase tracking-wider">Conference Dates</div>
+                    <h3 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-1">August 10–14, 2026</h3>
+                    <p class="text-white text-opacity-90 text-base sm:text-lg lg:text-xl">Three days of inspiring talks, workshops, and networking opportunities</p>
+                </div>
+            </div>
+            <a href="https://edas.info/N34685" class="px-6 sm:px-8 py-3 sm:py-4 bg-white text-dark font-bold rounded-lg hover:bg-opacity-90 transition-all flex items-center">
+                Register Now
+                <i class="fa-solid fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="guidelines" class="py-8 sm:py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Header -->
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">
+                Author Guidelines and Instructions
+            </h2>
+            <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                Follow these guidelines to ensure your submission meets all requirements
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 bg-gray-50 p-6 sm:p-8 rounded-xl border border-gray-200">
+
+            <!-- Column 1 -->
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-chevron-right text-primary mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Paper Submission & Language</h4>
+                        <p class="text-sm text-gray-600">
+                            All accepted and presented papers will be submitted for inclusion into IEEE Xplore subject to IEEE Xplore’s scope and quality requirements. All papers must be written in English.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-chevron-right text-primary mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Desk Review</h4>
+                        <p class="text-sm text-gray-600">
+                            Prior to double-blind review, scope and formatting will be checked. Non-compliant papers will be rejected, including:
+                            <ul class="list-disc pl-5 mt-1 text-gray-600">
+                                <li>Exceeding six (06) pages</li>
+                                <li>Out of conference scope</li>
+                                <li>Incorrect formatting</li>
+                                <li>Plagiarism score above 30%</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-chevron-right text-primary mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Double-Blind Review</h4>
+                        <p class="text-sm text-gray-600">
+                            Authors must not include names, affiliations, emails, acknowledgements, or grant information. Previous works should be referred to in third-person.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-chevron-right text-primary mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Generative AI Usage</h4>
+                        <p class="text-sm text-gray-600">
+                            AI tools may be used responsibly to enhance research and writing quality, especially for non-native English speakers. Authors must follow IEEE guidelines on AI-generated content disclosure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="space-y-4">
+                
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-chevron-right text-primary mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Full Paper Guidelines</h4>
+                        <p class="text-sm text-gray-600">
+                            Conference encourages full papers only. Maximum length is six (06) A4 pages using the IEEE Template format.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!--         <div class="grid grid-cols-1 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+                <div class="bg-white border-2 border-gray-200 p-6 sm:p-8 rounded-xl">
+                    <h4 class="text-xl font-bold text-dark mb-6 flex items-center">
+                        <i class="fa-solid fa-download text-primary mr-3"></i>
+                        Download Templates
+                    </h4>
+                    <div class="space-y-3">
+                        <a href="#" class="flex justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <span class="font-medium text-dark">LaTeX Template</span>
+                            <i class="fa-solid fa-arrow-down text-primary"></i>
+                        </a>
+                        <a href="#" class="flex justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <span class="font-medium text-dark">Word Template</span>
+                            <i class="fa-solid fa-arrow-down text-primary"></i>
+                        </a>
+                        <a href="#" class="flex justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                            <span class="font-medium text-dark">Guidelines PDF</span>
+                            <i class="fa-solid fa-arrow-down text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-dark text-white p-6 sm:p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa-solid fa-headset text-primary mr-3"></i>
+                        Need Help?
+                    </h4>
+                    <p class="text-gray-300 mb-6">
+                        Our support team is here to help you.
+                    </p>
+                    <div class="space-y-3">
+                        <a href="mailto:conf@apan.net" class="flex items-center space-x-3 text-primary">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>conf@apan.net</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 text-primary">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+    </div>
+</section>
+
+<section id="organizers" class="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+    <!-- Contact -->
+    <div class="bg-gradient-to-r from-dark to-gray-800 p-8 sm:p-12 rounded-2xl text-center">
+      <h3 class="text-2xl sm:text-3xl lg:text-3xl font-bold text-white mb-4">For Queries on APAN62 Conference</h3>
+      <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8">Have questions? Our team is here to help you with any inquiries about the conference</p>
+      <a href="mailto:conf@apan.net" class="inline-flex items-center px-6 sm:px-10 py-3 sm:py-5 bg-primary text-white font-bold text-base sm:text-lg rounded-lg hover:bg-opacity-90 transition-all shadow-lg mb-6 sm:mb-8">
+        <i class="fa-solid fa-envelope text-xl sm:text-2xl mr-3 sm:mr-4"></i>
+        Email Us
+      </a>
+      <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-gray-300">
+        <!-- <div class="flex items-center space-x-3">
+          <i class="fa-solid fa-phone text-primary text-lg sm:text-xl"></i>
+          <span>+1 (555) 123-4567</span>
+        </div> -->
+        <div class="flex items-center space-x-3">
+          <i class="fa-solid fa-location-dot text-primary text-lg sm:text-xl"></i>
+          <span>Auckland, New Zeland</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer id="footer" class="bg-dark text-white py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+      <p class="text-gray-400 text-sm sm:text-base">
+        &copy; <span id="currentYear"></span> APAN62 Conference. All rights reserved.
+      </p>
+<!--       <div class="flex flex-wrap sm:flex-nowrap items-center gap-4 sm:gap-6 text-sm sm:text-base">
+        <a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+      </div> -->
+    </div>
+
+  </div>
+
+  <script>
+    // Dynamically set the current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top"
+        class="fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primary/90 transition-opacity opacity-0 pointer-events-none z-50"
+        title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
+
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || !document.querySelector(href)) return;
+    e.preventDefault();
+    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+<script>
+const openMenuBtn = document.getElementById('open-menu');
+const closeMenuBtn = document.getElementById('close-menu');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+openMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('hidden');
+  mobileMenu.classList.add('flex');
+});
+
+closeMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('flex');
+  mobileMenu.classList.add('hidden');
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+
+    if (href.startsWith('#')) {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    }
+    
+  });
+});
+</script>
+
+<script>
+    // Get the button
+    const backToTopBtn = document.getElementById("back-to-top");
+
+    // Show button when scrolling down 300px
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+            backToTopBtn.classList.add("opacity-100", "pointer-events-auto");
+        } else {
+            backToTopBtn.classList.remove("opacity-100", "pointer-events-auto");
+            backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+        }
+    });
+
+    // Scroll smoothly to top on click
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
