@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Camera-Ready Guidelines</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="./" class="text-2xl font-bold text-dark"><span class="text-primary">APANConf 2026</span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="./#keynote-speakers" class="hover:text-primary">Keynotes</a>
+      <a href="./tracks.html" class="hover:text-primary">Tracks</a>
+      <div class="relative group">
+        <button class="inline-flex items-center text-primary">
+          Guidelines
+          <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+        </button>
+        <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+          <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+          <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm text-primary">Camera-Ready Guidelines</a>
+          <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+        </div>
+      </div>
+      <a href="./committee.html" class="hover:text-primary">Committee</a>
+      <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="hover:text-primary">APAN62 Meeting</a>
+    </div>
+    <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold"><span class="text-primary">APANConf 2026</span></span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="mobile-link">- Presentation Guidelines</a>
+    <a href="./committee.html" class="mobile-link">Committee</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<main class="py-12 sm:py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Camera-Ready Paper Submission</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        Final camera-ready deadline for APANConf'26: <span class="font-semibold text-dark">June 28, 2026</span>.
+      </p>
+    </div>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">1. Formatting Camera-Ready Paper</h2>
+      <ul class="space-y-3 text-gray-700 list-disc pl-5">
+        <li>Address all review comments carefully.</li>
+        <li>Camera-ready paper must follow IEEE guidelines and template requirements.</li>
+        <li>Papers may be returned/rejected if review comments are not properly addressed (TPC decision).</li>
+        <li>At this stage, author names, affiliations, emails, acknowledgements, and grant details may be included.</li>
+        <li>Title/keywords/abstract/content changes may be accepted only when aligned with reviewer feedback.</li>
+        <li>Addition of new authors is not allowed.</li>
+        <li>Abstract on EDAS/CMT metadata must match the abstract in the camera-ready paper.</li>
+        <li>Only IEEE PDF-compliant PDFs are accepted.</li>
+        <li>Do not include page numbers in the final manuscript.</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">2. PDF eXpress Account and File Validation</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Before final camera-ready upload, every paper must be validated through IEEE PDF eXpress to ensure IEEE Xplore compatibility.
+      </p>
+      <ol class="space-y-3 text-gray-700 list-decimal pl-5">
+        <li>Go to the PDF eXpress portal and sign in with your PDF eXpress account.</li>
+        <li>If you are a first-time user, create an account using the conference details provided in your acceptance communication.</li>
+        <li>Use the APANConf'26 conference ID and your account email to register/login.</li>
+        <li>Upload your source file or PDF and generate/check the IEEE PDF-compliant version.</li>
+        <li>Download the validated PDF and use that version for the final camera-ready submission.</li>
+        <li>Keep the PDF eXpress confirmation for your records until proceedings finalization is complete.</li>
+      </ol>
+    </section>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">3. IEEE Copyright Guideline</h2>
+      <p class="text-gray-700 leading-relaxed">
+        IEEE copyright instructions are shared directly with corresponding authors of accepted papers.
+      </p>
+    </section>
+
+    <section class="bg-dark text-white rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold mb-4">4. Abstract Template</h2>
+      <p class="text-gray-200 mb-5">Download and use the abstract template provided by the conference.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="https://www.ieee.org/conferences/publishing/templates" target="_blank" rel="noopener" class="px-5 py-3 bg-primary rounded-lg font-semibold">Download Template</a>
+        <a href="mailto:conf@apan.net" class="px-5 py-3 bg-white text-dark rounded-lg font-semibold">Email for Help</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

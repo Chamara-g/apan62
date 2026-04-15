@@ -1,426 +1,913 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <!-- Basic -->
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
   <title>APANConf 2026</title>
+
   <meta name="description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing. Submit your original research and be part of shaping the future of technology.">
 
+
+
   <!-- Favicon -->
+
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
+
+
   <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+
   <meta property="og:type" content="website">
+
   <meta property="og:title" content="APANConf 2026">
+
   <meta property="og:description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing.">
+
   <meta property="og:image" content="./hero.jpg">
+
   <meta property="og:url" content="">
+
   <meta property="og:site_name" content="APANConf 2026">
 
+
+
   <!-- Twitter Card -->
+
   <meta name="twitter:card" content="summary_large_image">
+
   <meta name="twitter:title" content="APANConf 2026">
+
   <meta name="twitter:description" content="AI, HPC, and Resilient Systems. Join leading researchers, practitioners, and innovators in exploring the convergence of Artificial Intelligence and High Performance Computing.">
+
   <meta name="twitter:image" content="./hero.jpg">
 
+
+
   <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+
+
   <!-- Font Awesome -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
   <!-- Tailwind -->
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
+
     tailwind.config = {
+
       theme: {
+
         extend: {
+
           colors: {
+
             primary: '#e7a20e',
+
             dark: '#000000',
+
           },
+
           fontFamily: {
+
             sans: ['Inter', 'sans-serif'],
+
           }
+
         }
+
       }
+
     }
+
   </script>
 
+
+
   <!-- UI tweaks -->
+
   <style>
+
     ::-webkit-scrollbar { display: none; }
+
   </style>
+
 </head>
+
+
 
 <body class="font-sans bg-white text-gray-900">
 
+
+
 <header id="header" class="bg-white border-b border-gray-200 sticky top-0 z-50">
+
     <div class="max-w-7xl mx-auto px-6">
+
         <nav class="flex justify-between items-center py-5">
+
             <!-- Logo -->
+
             <a href="./" class="text-2xl font-bold text-dark">
+
                 <span class="text-primary">APANConf 2026</span>
+
             </a>
 
+
+
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="./#keynote-speakers" class="nav-link">Keynote Speakers</a>
-                <a href="./#important-dates" class="nav-link">Important Dates</a>
-                <a href="./#guidelines" class="nav-link">Guidelines</a>
-                <a href="./committee.html" class="nav-link">Organizing Committee</a>
+
+            <div class="hidden md:flex items-center space-x-6 text-sm">
+
+                <a href="./#keynote-speakers" class="nav-link">Keynotes</a>
+
+                <a href="./tracks.html" class="nav-link">Tracks</a>
+
+                <div class="relative group">
+                    <button class="nav-link inline-flex items-center">
+                        Guidelines
+                        <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+                        <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+                        <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+                        <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+                    </div>
+                </div>
+
+                <a href="./committee.html" class="nav-link">Committee</a>
+
                 <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
-            </div>
 
-            <!-- Desktop Button -->
-            <div class="hidden md:block">
-                <a href="#" class="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg">
-                    Submit Paper
-                </a>
             </div>
-
             <!-- Mobile Menu Button -->
+
             <button id="open-menu" class="md:hidden text-gray-700">
+
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+
                      viewBox="0 0 24 24">
+
                     <path stroke-linecap="round" stroke-linejoin="round"
+
                           d="M4 6h16M4 12h16M4 18h16"/>
+
                 </svg>
+
             </button>
+
         </nav>
+
     </div>
+
 </header>
 
+
+
 <!-- Full Screen Mobile Menu -->
+
 <div id="mobile-menu"
+
      class="fixed inset-0 bg-white z-[100] hidden flex-col">
 
+
+
     <!-- Top Bar -->
+
     <div class="flex justify-between items-center px-6 py-5 border-b">
+
         <span class="text-2xl font-bold">
+
             <span class="text-primary">APANConf 2026</span>
+
         </span>
 
+
+
         <button id="close-menu" class="text-gray-700">
+
             <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+
                  viewBox="0 0 24 24">
+
                 <path stroke-linecap="round" stroke-linejoin="round"
+
                       d="M6 18L18 6M6 6l12 12"/>
+
             </svg>
+
         </button>
+
     </div>
+
+
 
     <!-- Menu Items -->
-    <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
-        <a href="./#keynote-speakers" class="nav-link">Keynote Speakers</a>
-        <a href="./#important-dates" class="nav-link">Important Dates</a>
-        <a href="./#guidelines" class="nav-link">Guidelines</a>
-        <a href="committee.html" class="nav-link">Organizing Committee</a>
-        <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
 
-        <a href="#" class="mt-6 px-8 py-3 bg-primary text-white font-semibold rounded-lg">
-            Submit Paper
-        </a>
+    <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+
+        <a href="./#keynote-speakers" class="nav-link mobile-link">Keynotes</a>
+
+        <a href="./tracks.html" class="nav-link mobile-link">Tracks</a>
+
+        <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+
+        <a href="./author-guidelines.html" class="nav-link mobile-link">- Author Guidelines</a>
+
+        <a href="./camera-ready-guidelines.html" class="nav-link mobile-link">- Camera-Ready Guidelines</a>
+
+        <a href="./presentation-submission-guidelines.html" class="nav-link mobile-link">- Presentation Guidelines</a>
+
+        <a href="committee.html" class="nav-link mobile-link">Committee</a>
+
+        <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link mobile-link">APAN62 Meeting</a>
     </div>
+
 </div>
+
  
+
 <section id="chairs" class="py-16 sm:py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-    <!-- Header -->
     <div class="text-center mb-12 sm:mb-16">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Organizing Committee</h2>
       <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+      <p class="max-w-4xl mx-auto text-gray-600 text-base sm:text-lg leading-8">
+        Our team brings together researchers, network leaders, and organizers from universities, APAN, and partner institutions to guide APANConf 2026 across strategy, technical program, publications, logistics, outreach, and digital experience.
+      </p>
     </div>
 
-    <!-- General Chairs -->
-    <div class="mb-12">
-      <!-- <h3 class="text-2xl sm:text-3xl font-bold text-dark mb-8">General Chairs</h3> -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">General Chairs and Conference Chairs</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Dulsha Abeywardana</h4>
-    <p class="text-primary font-semibold mb-3">General Chair</p>
-    <p class="text-gray-600 mb-4">University of Auckland, New Zealand</p>
-    <a href="https://profiles.auckland.ac.nz/d-abeywardana" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://attend.ieee.org/wieils-auckland-2023/wp-content/uploads/sites/539/Dulsha-Kularatna.jpg" alt="Dr. Dulsha Abeywardana" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Dulsha Abeywardana</h4>
+          <p class="text-primary font-semibold mb-2">General Chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/d-abeywardana" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Dulsha Abeywardana" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:d.abeywardana@auckland.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Dulsha Abeywardana" title="d.abeywardana@auckland.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/upul-jayasinghe.jpg" alt="Dr. Upul Jayasinghe" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Upul Jayasinghe</h4>
+          <p class="text-primary font-semibold mb-2">General Co-Chair</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://people.ce.pdn.ac.lk/staff/academic/upul-jayasinghe/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Upul Jayasinghe" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:upuljm@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Upul Jayasinghe" title="upuljm@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://www.auckland.ac.nz/content/auckland/en/engineering/about-the-faculty/engineering/electrical-computer-and-software-engineering/about/welcome-from-the-head-of-department/jcr:content/leftpar/imagecomponent/image.img.1024.medium.jpg/1742183736367.jpg" alt="Prof. Kevin Sowerby" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Prof. Kevin Sowerby</h4>
+          <p class="text-primary font-semibold mb-2">Conference Co-chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/kw-sowerby" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Prof. Kevin Sowerby" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:kw.sowerby@auckland.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Prof. Kevin Sowerby" title="kw.sowerby@auckland.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Upul Jayasinghe</h4>
-    <p class="text-primary font-semibold mb-3">General Co-Chair</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://cepdnaclk.github.io/department-website-2021/upul/index.html" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Steering Committee</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Asitha Bandaranayake</h4>
-    <p class="text-primary font-semibold mb-3">Steering Committee Chair</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="http://people.ce.pdn.ac.lk/staff/academic/asitha-bandaranayake/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/asitha-bandaranayake.jpg" alt="Dr. Asitha Bandaranayake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Asitha Bandaranayake</h4>
+          <p class="text-primary font-semibold mb-2">Steering Committee Chair</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="http://people.ce.pdn.ac.lk/staff/academic/asitha-bandaranayake/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Asitha Bandaranayake" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:asithab@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Asitha Bandaranayake" title="asithab@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://apan62.apan.net/wp-content/uploads/2025/11/Amber-McEwen-web-v3__FillWzI1MiwyNTJd.jpeg" alt="Ms. Amber McEwen" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Amber McEwen</h4>
+          <p class="text-primary font-semibold mb-2">Steering Committee Member</p>
+          <p class="text-gray-600">Research and Education Advanced Network New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://www.reannz.co.nz/about/our-people/amber-mcewen" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Amber McEwen" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:amber.mcewen@reannz.co.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Amber McEwen" title="amber.mcewen@reannz.co.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://www.nesi.org.nz/sites/default/files/styles/user_large/public/pictures/picture-3774-1553633741.jpg?itok=Lm1kn2nH" alt="Ms. Jana Makar" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Jana Makar</h4>
+          <p class="text-primary font-semibold mb-2">Steering Committee Member</p>
+          <p class="text-gray-600">Research and Education Advanced Network New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://www.nesi.org.nz/team-member/3774" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Jana Makar" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:jana.makar@reannz.co.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Jana Makar" title="jana.makar@reannz.co.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://apan.net/wp-content/uploads/2023/04/1680571291150.jpeg" alt="Ms. Liana Jacinta" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Liana Jacinta</h4>
+          <p class="text-primary font-semibold mb-2">Steering Committee Member</p>
+          <p class="text-gray-600">APAN Asia Pacific Advanced Network</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://my.linkedin.com/in/lianajacinta" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Liana Jacinta" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:liana@apan.net" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Liana Jacinta" title="liana@apan.net">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg" alt="Prof. Roshan Ragel" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Prof. Roshan Ragel</h4>
+          <p class="text-primary font-semibold mb-2">Steering Committee Member</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="http://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Prof. Roshan Ragel" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:roshanr@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Prof. Roshan Ragel" title="roshanr@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Amber McEwen</h4>
-    <p class="text-primary font-semibold mb-3">Steering Committee Member</p>
-    <p class="text-gray-600 mb-4">Research and Education Advanced Network New Zealand</p>
-    <a href="https://www.reannz.co.nz/about/our-people/amber-mcewen" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Secretariat</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Prof. Roshan Ragel</h4>
-    <p class="text-primary font-semibold mb-3">Steering Committee Member</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="http://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://eng.pdn.ac.lk/dmie/img/staff/EMEK%20Ekanayake2.png" alt="Dr. Erandathi Ekanayake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Erandathi Ekanayake</h4>
+          <p class="text-primary font-semibold mb-2">Secretary</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://eng.pdn.ac.lk/dmie/staff/DrEMEKEkanayake.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Erandathi Ekanayake" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:emekanayake@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Erandathi Ekanayake" title="emekanayake@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://profiles.auckland.ac.nz/kdis227/thumbnail" alt="Mr Kavishka Dissanayake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Mr Kavishka Dissanayake</h4>
+          <p class="text-primary font-semibold mb-2">Assistant Secretary</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/kdis227" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Mr Kavishka Dissanayake" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:kdis227@aucklanduni.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Mr Kavishka Dissanayake" title="kdis227@aucklanduni.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://fts.vau.ac.lk/dept/wp-content/uploads/2024/06/3.png" alt="Rukshani Puvanendran" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Rukshani Puvanendran</h4>
+          <p class="text-primary font-semibold mb-2">Assistant Secretary</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://fts.vau.ac.lk/dept/index.php/ms-rukshani-profile/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Rukshani Puvanendran" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:rukupuvan@gmail.com" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Rukshani Puvanendran" title="rukupuvan@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Prof. Partha Roop (TBC)</h4>
-    <p class="text-primary font-semibold mb-3">Conference Chair</p>
-    <p class="text-gray-600 mb-4">University of Auckland, New Zealand</p>
-    <a href="https://profiles.auckland.ac.nz/p-roop" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Technical Program and Awards</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Prof. Kevin Wang (TBC)</h4>
-    <p class="text-primary font-semibold mb-3">Conference Co-chair</p>
-    <p class="text-gray-600 mb-4">University of Auckland, New Zealand</p>
-    <a href="https://profiles.auckland.ac.nz/kevin-wang" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg" alt="Dr. Damayanthi Herath" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Damayanthi Herath</h4>
+          <p class="text-primary font-semibold mb-2">TPC and Awards Chair</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Damayanthi Herath" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:damayanthiherath@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Damayanthi Herath" title="damayanthiherath@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://profiles.auckland.ac.nz/dev-singh/thumbnail" alt="Dr Dev Singh" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr Dev Singh</h4>
+          <p class="text-primary font-semibold mb-2">TPC Co-chair and Awards Co-chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/dev-singh" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr Dev Singh" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:dev.singh@auckland.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr Dev Singh" title="dev.singh@auckland.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://eng.pdn.ac.lk/cc/academic_staff/ms.s.h.i.p.rathnapala/img/iroshinira.png" alt="Ms. Iroshini Ratnapala" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Iroshini Ratnapala</h4>
+          <p class="text-primary font-semibold mb-2">TPC Co-chair and Awards Co-chair</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://eng.pdn.ac.lk/cc/academic_staff/ms.s.h.i.p.rathnapala/index.html#home" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Iroshini Ratnapala" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:iroshinir@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Iroshini Ratnapala" title="iroshinir@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Jana Makar</h4>
-    <p class="text-primary font-semibold mb-3">Conference Co-chair</p>
-    <p class="text-gray-600 mb-4">Research and Education Advanced Network New Zealand</p>
-    <a href="https://www.nesi.org.nz/team-member/3774" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">International Relations</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Erandathi Ekanayake</h4>
-    <p class="text-primary font-semibold mb-3">Secretary</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://eng.pdn.ac.lk/dmie/staff/DrEMEKEkanayake.html" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://www.seu.ac.lk/fas/Division%20of%20Computer%20science/jahan.jpg" alt="Dr Akmal Jahan" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr Akmal Jahan</h4>
+          <p class="text-primary font-semibold mb-2">International Relations Co-Chair</p>
+          <p class="text-gray-600">South Eastern University of Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://www.seu.ac.lk/fas/Division%20of%20Computer%20science/jahan.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr Akmal Jahan" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:akmaljahan@seu.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr Akmal Jahan" title="akmaljahan@seu.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Sarani Vinodya Jayasooriya</h4>
-    <p class="text-primary font-semibold mb-3">Assistant Secretary</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://people.ce.pdn.ac.lk/students/e20/173/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Publications</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Damayanthi Herath</h4>
-    <p class="text-primary font-semibold mb-3">TPC and Awards Chair</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://0.academia-photos.com/66399/18671/188384129/s200_nurul.sarkar.jpg" alt="Prof. Nurul Sarkar" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Prof. Nurul Sarkar</h4>
+          <p class="text-primary font-semibold mb-2">Publication Chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand | | IEEE NZ N_Section</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://academics.aut.ac.nz/nurul.sarkar" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Prof. Nurul Sarkar" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:nurul.sarkar@aut.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Prof. Nurul Sarkar" title="nurul.sarkar@aut.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/yasodha-vimukthi.jpeg" alt="Ms. Yasodha Vimukthi" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Yasodha Vimukthi</h4>
+          <p class="text-primary font-semibold mb-2">Publication Co Chair</p>
+          <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://people.ce.pdn.ac.lk/staff/academic/yasodha-vimukthi/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Yasodha Vimukthi" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:yasodhav@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Yasodha Vimukthi" title="yasodhav@eng.pdn.ac.lk">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Maryam Hemmati (TBC)</h4>
-    <p class="text-primary font-semibold mb-3">TPC Co-chair and Awards Co-chair</p>
-    <p class="text-gray-600 mb-4">University of Auckland, New Zealand</p>
-    <a href="https://profiles.auckland.ac.nz/m-hemmati" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Finance and Logistics</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Iroshini Ratnapala</h4>
-    <p class="text-primary font-semibold mb-3">TPC Co-chair and Awards Co-chair</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://eng.pdn.ac.lk/cc/academic_staff/ms.s.h.i.p.rathnapala/index.html#home" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://apan.net/wp-content/uploads/2023/04/1680571291150.jpeg" alt="Ms. Liana Jacinta" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Liana Jacinta</h4>
+          <p class="text-primary font-semibold mb-2">Finance Chair</p>
+          <p class="text-gray-600">APAN Asia Pacific Advanced Network</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://apan.net/about/people/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Liana Jacinta" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:liana@apan.net" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Liana Jacinta" title="liana@apan.net">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://apan.net/wp-content/uploads/2020/12/0.jpg" alt="Mr. Shaan Sivagurunathan" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Mr. Shaan Sivagurunathan</h4>
+          <p class="text-primary font-semibold mb-2">Logistics Chair</p>
+          <p class="text-gray-600">APAN Asia Pacific Advanced Network</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://apan.net/about/people/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Mr. Shaan Sivagurunathan" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:sec@apan.net" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Mr. Shaan Sivagurunathan" title="sec@apan.net">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Yasodha Vimukthi</h4>
-    <p class="text-primary font-semibold mb-3">Publication Chair</p>
-    <p class="text-gray-600 mb-4">University of Peradeniya, Sri Lanka</p>
-    <a href="https://people.ce.pdn.ac.lk/staff/academic/yasodha-vimukthi/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">WIE and Inclusion</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Rajith Abeywardana</h4>
-    <p class="text-primary font-semibold mb-3">Publication Co Chair</p>
-    <p class="text-gray-600 mb-4">Little Engineers, New Zealand</p>
-    <a href="https://www.linkedin.com/in/rajith-abey/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQGeBqC8hdzlCQ/profile-displayphoto-crop_800_800/B56ZnNIq9_HkAI-/0/1760083227460?e=1777507200&amp;v=beta&amp;t=KjjUvDeBXX_QvXqU-UKn8ulra2v3IuxP7lnXlkpT2RU" alt="Dr. Thiaza Thasthakeer" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Thiaza Thasthakeer</h4>
+          <p class="text-primary font-semibold mb-2">WIE Chair</p>
+          <p class="text-gray-600">IEEE NZ North section</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://www.linkedin.com/in/thiaza-thasthakeer-phd-a36835aa/?originalSubdomain=nz" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Thiaza Thasthakeer" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Ms. Liana Jacinta</h4>
-    <p class="text-primary font-semibold mb-3">Finance Chair</p>
-    <p class="text-gray-600 mb-4">APAN Asia Pacific Advanced Network</p>
-    <a href="https://apan.net/about/people/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Workshops and Tutorials</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Mr. Shaan Sivagurunathan</h4>
-    <p class="text-primary font-semibold mb-3">Logistics Chair</p>
-    <p class="text-gray-600 mb-4">APAN Asia Pacific Advanced Network</p>
-    <a href="https://apan.net/about/people/" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://profiles.auckland.ac.nz/felix-marattukalam/thumbnail" alt="Dr. Felix Marattukalam" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Felix Marattukalam</h4>
+          <p class="text-primary font-semibold mb-2">Workshop and Tutorial Chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/felix-marattukalam" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Felix Marattukalam" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:Felix.Marattukalam@auckland.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Felix Marattukalam" title="Felix.Marattukalam@auckland.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Thiaza Thasthakeer</h4>
-    <p class="text-primary font-semibold mb-3">WIE Track Chair</p>
-    <p class="text-gray-600 mb-4">IEEE NZ North section</p>
-    <a href="https://www.linkedin.com/in/thiaza-thasthakeer-phd-a36835aa/?originalSubdomain=nz" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Publicity and Digital Content</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
-    <h4 class="text-xl sm:text-2xl font-bold text-dark mb-2">Dr. Felix Marattukalam</h4>
-    <p class="text-primary font-semibold mb-3">Workshop and Tutorial Chair</p>
-    <p class="text-gray-600 mb-4">University of Auckland, New Zealand</p>
-    <a href="https://profiles.auckland.ac.nz/felix-marattukalam" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-      <i class="fa-solid fa-globe"></i>
-    </a>
-  </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQEGDSsiAI_QKQ/profile-displayphoto-scale_400_400/B56ZwT4H89HwAg-/0/1769860010190?e=2147483647&amp;v=beta&amp;t=EmAe4O6vf3QY9p0YHjyltNT547cN9-1WNPCU2SfAXMo" alt="Dr. Namal Rathnayake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Namal Rathnayake</h4>
+          <p class="text-primary font-semibold mb-2">Digital Content and Website Chair</p>
+          <p class="text-gray-600">Japan Agency for Marine-Earth Science and Technology</p>
+          <p class="text-gray-600 mt-1">Cross-appointed at Kagoshima University, Japan</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://www.linkedin.com/in/namal-rathnayake/?originalSubdomain=jp" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Namal Rathnayake" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:namalr@jamstec.go.jp" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Namal Rathnayake" title="namalr@jamstec.go.jp">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://profiles.auckland.ac.nz/rwij196/thumbnail" alt="Mr Ravindu Wijekoon" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Mr Ravindu Wijekoon</h4>
+          <p class="text-primary font-semibold mb-2">Publicity Chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/rwij196" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Mr Ravindu Wijekoon" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:rwij196@aucklanduni.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Mr Ravindu Wijekoon" title="rwij196@aucklanduni.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
 
-</div>
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Registration</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+      <div class="flex items-start gap-4">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFZclWmG6i-1g/profile-displayphoto-shrink_800_800/B56ZUS2PZTHoAc-/0/1739777967229?e=1777507200&amp;v=beta&amp;t=VqkjIlqKdw4cIaNp3OQAL6jburEFOY9Ud90LlEC5eew" alt="Mr Sahan Gunathilake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+        <div class="min-w-0 flex-1">
+          <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Mr Sahan Gunathilake</h4>
+          <p class="text-primary font-semibold mb-2">Registration Chair</p>
+          <p class="text-gray-600">University of Auckland, New Zealand</p>
+          <div class="flex items-center gap-3 mt-4"><a href="https://profiles.auckland.ac.nz/sgun103" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Mr Sahan Gunathilake" title="Profile">
+            <i class="fa-solid fa-globe"></i>
+          </a><a href="mailto:sgun103@aucklanduni.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Mr Sahan Gunathilake" title="sgun103@aucklanduni.ac.nz">
+            <i class="fa-solid fa-envelope"></i>
+          </a></div>
+        </div>
+      </div>
+    </div>
+      </div>
     </div>
 
   </div>
 </section>
 
+
+
+
 <footer id="footer" class="bg-dark text-white py-12 sm:py-16">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
+
+
     <!-- Bottom -->
+
     <div class="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+
       <p class="text-gray-400 text-sm sm:text-base">
-        &copy; <span id="currentYear"></span> APAN58 Conference. All rights reserved.
+
+        &copy; <span id="currentYear"></span> APANConf 2026. All rights reserved.
+
       </p>
+
       <div class="flex flex-wrap sm:flex-nowrap items-center gap-4 sm:gap-6 text-sm sm:text-base">
+
         <a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+
         <a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+
       </div>
+
     </div>
+
+
 
   </div>
 
+
+
   <script>
+
     // Dynamically set the current year
+
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+
   </script>
+
 </footer>
 
+
+
 <!-- Back to Top Button -->
+
 <button id="back-to-top"
+
         class="fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primary/90 transition-opacity opacity-0 pointer-events-none z-50"
+
         title="Back to Top">
+
     <i class="fa-solid fa-arrow-up"></i>
+
 </button>
 
+
+
 </body>
+
 </html>
 
 
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-});
-</script>
+
+
 
 <script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+
+<script>
+
   // Elements
+
   const openMenuBtn = document.getElementById('open-menu');
+
   const closeMenuBtn = document.getElementById('close-menu');
+
   const mobileMenu = document.getElementById('mobile-menu');
+
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
+
+
   // Open mobile menu
+
   openMenuBtn.addEventListener('click', () => {
+
     mobileMenu.classList.remove('hidden');
+
     mobileMenu.classList.add('flex');
+
   });
+
+
 
   // Close mobile menu
+
   closeMenuBtn.addEventListener('click', () => {
+
     mobileMenu.classList.remove('flex');
+
     mobileMenu.classList.add('hidden');
+
   });
 
-  // Smooth scroll + auto-close for mobile links
+
+
+  // Auto-close mobile menu after link click
+
   mobileLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    link.addEventListener('click', () => {
 
-      // Close mobile menu
       mobileMenu.classList.remove('flex');
+
       mobileMenu.classList.add('hidden');
+
     });
+
   });
+
 </script>
 
+
+
 <script>
+
     // Get the button
+
     const backToTopBtn = document.getElementById("back-to-top");
 
+
+
     // Show button when scrolling down 300px
+
     window.addEventListener("scroll", () => {
+
         if (window.scrollY > 300) {
+
             backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+
             backToTopBtn.classList.add("opacity-100", "pointer-events-auto");
+
         } else {
+
             backToTopBtn.classList.remove("opacity-100", "pointer-events-auto");
+
             backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+
         }
+
     });
 
+
+
     // Scroll smoothly to top on click
+
     backToTopBtn.addEventListener("click", () => {
+
         window.scrollTo({ top: 0, behavior: "smooth" });
+
     });
+
 </script>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Presentation Submission Guidelines</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="./" class="text-2xl font-bold text-dark"><span class="text-primary">APANConf 2026</span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="./#keynote-speakers" class="hover:text-primary">Keynotes</a>
+      <a href="./tracks.html" class="hover:text-primary">Tracks</a>
+      <div class="relative group">
+        <button class="inline-flex items-center text-primary">
+          Guidelines
+          <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+        </button>
+        <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+          <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+          <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+          <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm text-primary">Presentation Guidelines</a>
+        </div>
+      </div>
+      <a href="./committee.html" class="hover:text-primary">Committee</a>
+      <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="hover:text-primary">APAN62 Meeting</a>
+    </div>
+    <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold"><span class="text-primary">APANConf 2026</span></span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="mobile-link">- Presentation Guidelines</a>
+    <a href="./committee.html" class="mobile-link">Committee</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<main class="py-12 sm:py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Presentation Submission Guidelines</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        Instructions for oral presentations, slides, and self-recorded video submissions for APANConf'26.
+      </p>
+    </div>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">Timing of Oral Presentation</h2>
+      <ul class="space-y-3 text-gray-700 list-disc pl-5">
+        <li>12 minutes for presentation.</li>
+        <li>3 minutes for Q&amp;A.</li>
+        <li>First bell at 10 minutes.</li>
+        <li>Second bell at 12 minutes.</li>
+        <li>Presenters must stop at 12 minutes.</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">Preparation of Presentation Slides (PPT)</h2>
+      <ul class="space-y-3 text-gray-700 list-disc pl-5">
+        <li>Presentation title must match the conference registered paper title.</li>
+        <li>Presenter can organize slides suitably while maintaining clarity.</li>
+        <li>Tables and figures should be clearly visible.</li>
+        <li>Title slide must include paper title, author names, and affiliations.</li>
+        <li>Use the conference PowerPoint template.</li>
+        <li>Recommended file name format: <code>&lt;APANConf2026_PaperID_LastName.ppt&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">Preparation of Self-Recorded Video</h2>
+      <ul class="space-y-3 text-gray-700 list-disc pl-5">
+        <li>Maximum duration: 12 minutes.</li>
+        <li>Presenter's face should appear in the top-right corner of the video.</li>
+        <li>Accepted format: MP4.</li>
+        <li>Maximum file size: 25 MB.</li>
+        <li>Aspect ratio: 16:9.</li>
+        <li>Recommended tools: OBS Studio, Zoom, Bandicam, Free Cam.</li>
+        <li>If needed, compress large files (for example with HandBrake).</li>
+        <li>Recommended file name format: <code>&lt;APANConf2026_PaperID_LastName.mp4&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold text-dark mb-4">Submission of Video and Slides</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        Upload your self-recorded video and presentation slides through the conference submission process.
+      </p>
+      <ul class="space-y-3 text-gray-700 list-disc pl-5">
+        <li>Upload deadline: <span class="font-semibold">June 28, 2026</span>.</li>
+        <li>Ensure submitted files follow naming conventions and format requirements.</li>
+      </ul>
+    </section>
+
+    <section class="bg-dark text-white rounded-2xl p-6 sm:p-8 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Recommendations and Best Practices</h2>
+      <ul class="space-y-3 text-gray-200 list-disc pl-5">
+        <li>Presenters are encouraged to wear formal attire.</li>
+        <li>Use the conference virtual background where available.</li>
+        <li>Choose an environment with minimal background noise.</li>
+        <li>Set camera at eye level or slightly above.</li>
+      </ul>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://edas.info/N34685" target="_blank" rel="noopener" class="px-5 py-3 bg-primary rounded-lg font-semibold">Submit via EDAS</a>
+        <a href="mailto:conf@apan.net" class="px-5 py-3 bg-white text-dark rounded-lg font-semibold">Contact Support</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

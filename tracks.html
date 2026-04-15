@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Conference Tracks</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="./" class="text-2xl font-bold text-dark"><span class="text-primary">APANConf 2026</span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="./#keynote-speakers" class="hover:text-primary">Keynotes</a>
+      <a href="./tracks.html" class="text-primary">Tracks</a>
+      <div class="relative group">
+        <button class="inline-flex items-center hover:text-primary">
+          Guidelines
+          <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+        </button>
+        <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+          <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+          <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+          <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+        </div>
+      </div>
+      <a href="./committee.html" class="hover:text-primary">Committee</a>
+      <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="hover:text-primary">APAN62 Meeting</a>
+    </div>
+    <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold"><span class="text-primary">APANConf 2026</span></span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="mobile-link">- Presentation Guidelines</a>
+    <a href="./committee.html" class="mobile-link">Committee</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<main class="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-white min-h-screen">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 sm:mb-12">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Conference Tracks</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        APANConf'26 tracks with Track Chairs and Co-Chairs.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <summary class="px-6 sm:px-8 py-5 bg-gradient-to-r from-primary/10 to-transparent cursor-pointer list-none flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Track 1</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-dark">Future Internet, R&amp;E Networks, and Infrastructure</h2>
+          </div>
+          <i class="fa-solid fa-chevron-down text-primary"></i>
+        </summary>
+        <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-gray-200">
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr. Suneth Namal</p><p class="text-sm text-primary mt-1">Track Chair</p><p class="text-sm text-gray-600 mt-2">University of Peradeniya, Sri Lanka</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr. Prabhani Liyanage</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-600 mt-2">prabani@sjp.ac.lk</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">To be confirmed</p></div>
+        </div>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <summary class="px-6 sm:px-8 py-5 bg-gradient-to-r from-primary/10 to-transparent cursor-pointer list-none flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Track 2</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-dark">AI, Machine Learning, and Vision Systems</h2>
+          </div>
+          <i class="fa-solid fa-chevron-down text-primary"></i>
+        </summary>
+        <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-gray-200">
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr Surangika Ranathunga P</p><p class="text-sm text-primary mt-1">Track Chair</p><p class="text-sm text-gray-600 mt-2">Massey University of New Zealand<br>S.Ranathunga@massey.ac.nz</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Prof. Amirthalingam Ramanan</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-600 mt-2">University of Jaffna, Sri Lanka<br>a.ramanan@univ.jfn.ac.lk</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">To be confirmed</p></div>
+        </div>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <summary class="px-6 sm:px-8 py-5 bg-gradient-to-r from-primary/10 to-transparent cursor-pointer list-none flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Track 3</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-dark">High-Performance, Cloud, and Distributed Computing</h2>
+          </div>
+          <i class="fa-solid fa-chevron-down text-primary"></i>
+        </summary>
+        <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-gray-200">
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr. Darshana Jayasinghe</p><p class="text-sm text-primary mt-1">Track Chair</p><p class="text-sm text-gray-500 mt-2">Details pending</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr. Pabudi Abeyrathne</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">Details pending</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">To be confirmed</p></div>
+        </div>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <summary class="px-6 sm:px-8 py-5 bg-gradient-to-r from-primary/10 to-transparent cursor-pointer list-none flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Track 4</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-dark">Digital Applications in Health, Agriculture, Education, and Environment</h2>
+          </div>
+          <i class="fa-solid fa-chevron-down text-primary"></i>
+        </summary>
+        <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-gray-200">
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Prof. Kamalanath Samarakoon</p><p class="text-sm text-primary mt-1">Track Chair</p><p class="text-sm text-gray-600 mt-2">University of Peradeniya, Sri Lanka</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-600 mt-2">University of Peradeniya, Sri Lanka<br>kamalanath@eng.pdn.ac.lk</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">To be confirmed</p></div>
+        </div>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <summary class="px-6 sm:px-8 py-5 bg-gradient-to-r from-primary/10 to-transparent cursor-pointer list-none flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Track 5</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-dark">Policy, Ethics, and Regional Priorities in Digital Infrastructure</h2>
+          </div>
+          <i class="fa-solid fa-chevron-down text-primary"></i>
+        </summary>
+        <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-gray-200">
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr. Rajith Vidanarachchi</p><p class="text-sm text-primary mt-1">Track Chair</p><p class="text-sm text-gray-500 mt-2">Details pending</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-dark">Dr Kasun Amarasinghe</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">Details pending</p></div>
+          <div class="rounded-xl border border-gray-200 p-4"><p class="font-semibold text-gray-500">TBC</p><p class="text-sm text-primary mt-1">Track Co-Chair</p><p class="text-sm text-gray-500 mt-2">To be confirmed</p></div>
+        </div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

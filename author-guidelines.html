@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Author Guidelines</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="./" class="text-2xl font-bold text-dark"><span class="text-primary">APANConf 2026</span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="./#keynote-speakers" class="hover:text-primary">Keynotes</a>
+      <a href="./tracks.html" class="hover:text-primary">Tracks</a>
+      <div class="relative group">
+        <button class="inline-flex items-center text-primary">
+          Guidelines
+          <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+        </button>
+        <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+          <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm text-primary">Author Guidelines</a>
+          <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+          <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+        </div>
+      </div>
+      <a href="./committee.html" class="hover:text-primary">Committee</a>
+      <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="hover:text-primary">APAN62 Meeting</a>
+    </div>
+    <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold"><span class="text-primary">APANConf 2026</span></span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="mobile-link">- Presentation Guidelines</a>
+    <a href="./committee.html" class="mobile-link">Committee</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<main class="py-12 sm:py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Author Guidelines</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        Use this page for APANConf'26 paper preparation and submission requirements.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <details open class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          Paper Preparation
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8">
+          <ul class="space-y-3 text-gray-700 list-disc pl-5">
+            <li>The accepted and presented papers will be submitted for inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements.</li>
+            <li>All papers should be written in English.</li>
+            <li>The conference only encourages the submission of full papers. Maximum length of a full paper is limited to six (06) A4 pages in the given IEEE template format.</li>
+            <li>During the desk review process (prior to the formal double blind review) the scope and formatting of papers will be checked. Papers having non-compliances, including the following, will be rejected.</li>
+          </ul>
+          <ul class="space-y-2 text-gray-700 list-disc pl-10 mt-3">
+            <li>Papers that have more than six (06) pages.</li>
+            <li>Papers that are out of scope of the conference.</li>
+            <li>Papers that do not follow proper formatting guidelines.</li>
+            <li>Papers that have a plagiarism score above 30%.</li>
+          </ul>
+          <ul class="space-y-3 text-gray-700 list-disc pl-5 mt-3">
+            <li>Since the review process is double-blind (neither the author nor the reviewers are aware of each other's identity), authors are requested to follow these instructions.</li>
+          </ul>
+          <ul class="space-y-2 text-gray-700 list-disc pl-10 mt-3">
+            <li>Do NOT include authors' information (name, affiliations, e-mail), acknowledgements, or grant information in the review manuscript.</li>
+            <li>Authors' previous work should be referred to in third person.</li>
+          </ul>
+          <ul class="space-y-3 text-gray-700 list-disc pl-5 mt-3">
+            <li>Guidelines for Generative AI Usage.</li>
+          </ul>
+          <ul class="space-y-2 text-gray-700 list-disc pl-10 mt-3">
+            <li>The developments in generative artificial intelligence (AI) tools, including large language models (LLMs), are transforming publication workflows. We encourage responsible use to support researchers' own capacity to create high-quality scientific work.</li>
+            <li>Authors must comply with IEEE guidelines on use and disclosure of AI-generated content as specified in the IEEE Publication Services and Products Board Operations Manual.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          Paper Submission
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8">
+          <ul class="space-y-3 text-gray-700 list-disc pl-5">
+            <li>All paper submissions are through <a target="_blank" rel="noopener" href="https://edas.info/N34685" class="text-primary font-semibold">EDAS</a>. If you are a first-time user, create an account using your official email.</li>
+            <li>Choose the most appropriate <a href="./tracks.html" class="text-primary font-semibold">track</a>.</li>
+            <li>Manuscript submission should be in Adobe Portable Document Format (PDF) only.</li>
+            <li>Please <a href="mailto:conf@apan.net" class="text-primary font-semibold">contact us</a> if you have any questions regarding your submission or if you experience issues while submitting your manuscript.</li>
+            <li>Conference organizers encourage you to obtain prior clearances/approvals from relevant organizations if ethical clearance is required for your paper content.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
