@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Plan Your Visit</title>
+  <meta name="description" content="Registration, visa information, venue and accommodation, and things to do in Auckland for APANConf 2026 delegates.">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="./" class="inline-flex items-center gap-3 text-2xl font-bold text-dark">
+      <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+      <span class="text-primary">APANConf 2026</span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="./#keynote-speakers" class="hover:text-primary">Keynotes</a>
+      <a href="./tracks.html" class="hover:text-primary">Tracks</a>
+      <div class="relative group">
+        <button class="inline-flex items-center hover:text-primary">
+          Guidelines
+          <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+        </button>
+        <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+          <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+          <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+          <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+          <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Registration</a>
+        </div>
+      </div>
+      <a href="./committee.html" class="hover:text-primary">Committee</a>
+      <a href="./plan-your-visit.html" class="text-primary">Plan Your Visit</a>
+      <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="hover:text-primary">APAN62 Meeting</a>
+    </div>
+    <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold inline-flex items-center gap-3">
+      <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+      <span class="text-primary">APANConf 2026</span>
+    </span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="mobile-link">- Presentation Guidelines</a>
+    <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="mobile-link">- Registration</a>
+    <a href="./committee.html" class="mobile-link">Committee</a>
+    <a href="./plan-your-visit.html" class="mobile-link">Plan Your Visit</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<main class="py-12 sm:py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Plan Your Visit</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        Everything you need to register, travel to Aotearoa New Zealand, find accommodation, and make the most of your time in Auckland.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <details id="registration" open class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden scroll-mt-28">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          <span class="inline-flex items-center gap-3">
+            <i class="fa-solid fa-id-card text-primary"></i>
+            Registration
+          </span>
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8 space-y-4 text-gray-700">
+          <p>Registration is now open for APAN62. Early bird rates end on <strong>30 June 2026</strong>.</p>
+          <ul class="space-y-2 list-disc pl-5">
+            <li>Complete your registration on the official APAN62 registration portal.</li>
+            <li>Request a letter of invitation during registration if you need one for your visa application (passport details required).</li>
+            <li>Cancellations notified by 1 July 2026 receive a full refund less an NZ$200 administration charge. Contact <a href="mailto:margaret@conference.nz" class="text-primary font-semibold">margaret@conference.nz</a> to reassign or cancel.</li>
+          </ul>
+          <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition">
+            Register for APAN62
+            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
+        </div>
+      </details>
+
+      <details id="visa-visit" class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden scroll-mt-28">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          <span class="inline-flex items-center gap-3">
+            <i class="fa-solid fa-passport text-primary"></i>
+            Visa &amp; Visit
+          </span>
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8 space-y-4 text-gray-700">
+          <p>To visit Aotearoa New Zealand you will generally need:</p>
+          <ul class="space-y-2 list-disc pl-5">
+            <li>A valid passport.</li>
+            <li>A New Zealand Electronic Travel Authority (NZeTA) or a visitor visa, depending on your nationality.</li>
+            <li>A completed New Zealand Traveller Declaration (free; can be done online up to 24 hours before travel).</li>
+          </ul>
+          <p>Most travellers on an NZeTA or visitor visa must also pay the International Visitor Conservation and Tourism Levy (IVL) of NZ$100.</p>
+          <ul class="space-y-2 list-disc pl-5">
+            <li><strong>NZeTA:</strong> typically processed within ~72 hours; NZ$17. Required for visa-waiver countries, Australian permanent residents, and certain other travellers.</li>
+            <li><strong>Visitor visa:</strong> allow 2–8 weeks processing — apply as early as possible.</li>
+            <li><strong>Invitation letter:</strong> request during registration, or contact <a href="mailto:mandy@conference.nz" class="text-primary font-semibold">mandy@conference.nz</a> before registering.</li>
+          </ul>
+          <p class="text-sm text-gray-600">August is mid-winter in Auckland (5–15&nbsp;°C). NZD is the local currency; tap water is safe to drink; emergency number is 111.</p>
+          <a href="https://apan62.apan.net/visiting-aotearoa-new-zealand/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition">
+            Visa &amp; travel information
+            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
+        </div>
+      </details>
+
+      <details id="venue-hotels" class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden scroll-mt-28">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          <span class="inline-flex items-center gap-3">
+            <i class="fa-solid fa-hotel text-primary"></i>
+            Venue &amp; Hotels
+          </span>
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8 space-y-4 text-gray-700">
+          <p>APAN62 takes place in <strong>Tāmaki Makaurau | Auckland</strong>, New Zealand's largest and most diverse city — a vibrant hub of food, culture, and harbour-side scenery.</p>
+          <div class="bg-white border border-gray-200 rounded-xl p-5">
+            <h3 class="font-bold text-dark text-lg mb-2">The Grand Millennium</h3>
+            <p class="mb-2">71 Mayoral Drive, Cnr Vincent Street, Auckland — in the city centre, close to Queen Street, SkyCity, and Viaduct Harbour.</p>
+            <ul class="space-y-1 list-disc pl-5 text-sm">
+              <li>Deluxe room from NZ$269/night</li>
+              <li>Premier deluxe from NZ$309/night</li>
+              <li>Club room from NZ$343/night (lounge access, parking, breakfast)</li>
+            </ul>
+            <p class="mt-3 text-sm">Special APAN delegate rates are available when booking through the official link.</p>
+          </div>
+          <p>Other nearby options include Auckland City Hotel, Mercure Auckland, Lylo Auckland, and Haka House Auckland City — all within a 5–10 minute walk of the venue.</p>
+          <a href="https://apan62.apan.net/venue/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition">
+            Venue &amp; accommodation details
+            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
+        </div>
+      </details>
+
+      <details id="things-to-do" class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden scroll-mt-28">
+        <summary class="cursor-pointer list-none bg-[#deedf5] px-6 sm:px-8 py-4 text-lg sm:text-xl font-bold text-dark flex items-center justify-between">
+          <span class="inline-flex items-center gap-3">
+            <i class="fa-solid fa-map-location-dot text-primary"></i>
+            Things to Do in Auckland
+          </span>
+          <i class="fa-solid fa-chevron-down text-primary text-sm"></i>
+        </summary>
+        <div class="p-6 sm:p-8 space-y-4 text-gray-700">
+          <p>As an APAN62 delegate, you can access exclusive offers on restaurants, attractions, and activities across Auckland through the Auckland Convention Bureau Delegate Offer Programme.</p>
+          <p>Highlights include discounts on the Sky Tower, Auckland Zoo, Auckland Museum, Waiheke Island zipline adventures, harbour cruises, America's Cup sailing, and more — plus dining offers at local restaurants.</p>
+          <p class="text-sm text-gray-600">Browse all current offers and redemption codes on the Auckland Convention Bureau website. Many offers use promo codes such as <strong>LoveAKL26</strong> or your conference lanyard.</p>
+          <a href="https://aucklandconventionbureau.com/delegate-offers" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition">
+            Browse delegate offers
+            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
+        </div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<section class="bg-gray-50 border-y border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-3">
+    <span class="text-sm font-semibold uppercase tracking-wide text-gray-600">Technical Sponsor</span>
+    <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+  </div>
+</section>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

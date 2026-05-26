@@ -67,7 +67,7 @@
         <nav class="flex justify-between items-center py-5">
             <!-- Logo -->
             <a href="./" class="inline-flex items-center gap-3 text-2xl font-bold text-dark">
-                <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-8 w-auto" />
+                <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
                 <span class="text-primary">APANConf 2026</span>
             </a>
 
@@ -88,6 +88,7 @@
                     </div>
                 </div>
                 <a href="./committee.html" class="nav-link">Committee</a>
+                <a href="./plan-your-visit.html" class="nav-link">Plan Your Visit</a>
                 <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
             </div>
 
@@ -117,7 +118,7 @@
     <!-- Top Bar -->
     <div class="flex justify-between items-center px-6 py-5 border-b">
         <span class="text-2xl font-bold inline-flex items-center gap-3">
-            <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-8 w-auto" />
+            <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
             <span class="text-primary">APANConf 2026</span>
         </span>
 
@@ -140,6 +141,7 @@
         <a href="./presentation-submission-guidelines.html" class="nav-link mobile-link">- Presentation Guidelines</a>
         <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="nav-link mobile-link">- Registration</a>
         <a href="committee.html" class="nav-link mobile-link">Committee</a>
+        <a href="./plan-your-visit.html" class="nav-link mobile-link">Plan Your Visit</a>
         <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
 
         <a href="#call-for-papers"
@@ -235,14 +237,47 @@
     </div>
 </section>
 
+<section id="conference-video" class="py-12 bg-gray-50 border-y border-gray-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-dark">APANConf 2026 Video</h2>
+            <p class="mt-2 text-gray-600">Watch the official conference introduction.</p>
+            <p class="mt-1 text-sm text-gray-500">Conference location: Auckland, New Zealand</p>
+        </div>
+        <div class="relative w-full overflow-hidden rounded-2xl shadow-lg bg-black" style="padding-top: 56.25%;">
+            <iframe
+                src="https://drive.google.com/file/d/1IgHysDcP31HfKideck1RcJkVJ3g0HjAe/preview"
+                title="APANConf 2026 Video"
+                class="absolute inset-0 w-full h-full border-0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
 <section class="py-8 sm:py-10 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
-            The 4th International Conference on Advanced Network Technologies and Applications (APANConf'26) is a co-located event as part of APAN62, a five-day international meeting bringing together a global community of researchers, educators, innovators, and technical experts.
-        </p>
-        <p class="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
-            More than 300 tech-savvy delegates will explore emerging trends in advanced networking, digital infrastructure, and collaborative technologies through a programme of keynote speakers, working groups, special interest sessions, interactive workshops, and social events.
-        </p>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8">
+            <div class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-20 sm:h-24 w-auto" />
+            </div>
+            <div>
+                <p class="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
+                    The 4th International Conference on Advanced Network Technologies and Applications (APANConf'26) is a co-located event as part of APAN62, a five-day international meeting bringing together a global community of researchers, educators, innovators, and technical experts.
+                </p>
+                <p class="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
+                    More than 300 tech-savvy delegates will explore emerging trends in advanced networking, digital infrastructure, and collaborative technologies through a programme of keynote speakers, working groups, special interest sessions, interactive workshops, and social events.
+                </p>
+                <a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70967"
+                   target="_blank"
+                   rel="noopener"
+                   class="mt-5 inline-flex items-center text-sm sm:text-base font-semibold text-primary hover:text-primary/80">
+                    View IEEE event listing
+                    <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -518,9 +553,13 @@
                         <i class="fa-solid fa-calendar-days text-3xl text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Paper Submission Deadline</div>
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">May 15, 2026</h3>
-                        <p class="text-gray-300 text-base sm:text-lg">Final deadline for submitting full papers through EDAS system. No extensions will be granted.</p>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <div class="text-primary font-semibold text-sm uppercase tracking-wider">Paper Submission Deadline</div>
+                            <span class="px-2 py-0.5 bg-red-500 bg-opacity-90 rounded-md text-xs font-bold uppercase tracking-wider text-white">Extended</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1">May 31, 2026</h3>
+                        <div class="text-sm text-gray-400 mb-2">Previously: <span class="line-through">May 15, 2026</span></div>
+                        <p class="text-gray-300 text-base sm:text-lg">Extended deadline for submitting full papers through EDAS system.</p>
                         <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
                             <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">23:59 AoE</span>
                             <!-- <span class="text-gray-400 text-sm">Anywhere on Earth</span> -->
@@ -536,8 +575,12 @@
                         <i class="fa-solid fa-bell text-3xl text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Notification of Acceptance</div>
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">June 10, 2026</h3>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <div class="text-primary font-semibold text-sm uppercase tracking-wider">Notification of Acceptance</div>
+                            <span class="px-2 py-0.5 bg-red-500 bg-opacity-90 rounded-md text-xs font-bold uppercase tracking-wider text-white">Extended</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1">June 28, 2026</h3>
+                        <div class="text-sm text-gray-400 mb-2">Previously: <span class="line-through">June 10, 2026</span></div>
                         <p class="text-gray-300 text-base sm:text-lg">Authors will be notified about acceptance status and reviewer feedback via email.</p>
                         <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
                             <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">Email</span>
@@ -554,8 +597,12 @@
                         <i class="fa-solid fa-file-circle-check text-3xl text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <div class="text-primary font-semibold mb-1 text-sm uppercase tracking-wider">Camera-Ready Submission</div>
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">June 28, 2026</h3>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <div class="text-primary font-semibold text-sm uppercase tracking-wider">Camera-Ready Submission</div>
+                            <span class="px-2 py-0.5 bg-red-500 bg-opacity-90 rounded-md text-xs font-bold uppercase tracking-wider text-white">Extended</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1">July 8, 2026</h3>
+                        <div class="text-sm text-gray-400 mb-2">Previously: <span class="line-through">June 28, 2026</span></div>
                         <p class="text-gray-300 text-base sm:text-lg">Submit final camera-ready version incorporating all reviewer comments and suggestions.</p>
                         <div class="mt-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
                             <span class="px-3 py-1 sm:px-4 sm:py-2 bg-primary bg-opacity-20 rounded-lg text-sm font-semibold">Final Version</span>
@@ -744,6 +791,13 @@
     </div>
 
   </div>
+</section>
+
+<section class="bg-gray-50 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-3">
+        <span class="text-sm font-semibold uppercase tracking-wide text-gray-600">Technical Sponsor</span>
+        <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+    </div>
 </section>
 
 <footer id="footer" class="bg-dark text-white py-12 sm:py-16">
