@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APANConf 2026 | Technical Committee</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e7a20e", dark: "#000000" },
+          fontFamily: { sans: ["Inter", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+  <style>::-webkit-scrollbar { display: none; }</style>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<header id="header" class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex justify-between items-center py-5">
+      <a href="./" class="inline-flex items-center gap-3 text-2xl font-bold text-dark">
+        <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+        <span class="text-primary">APANConf 2026</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-sm">
+        <a href="./#keynote-speakers" class="nav-link">Keynotes</a>
+        <a href="./tracks.html" class="nav-link">Tracks</a>
+        <div class="relative group">
+          <button class="nav-link inline-flex items-center">
+            Guidelines
+            <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+          </button>
+          <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+            <a href="./author-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Author Guidelines</a>
+            <a href="./camera-ready-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Camera-Ready Guidelines</a>
+            <a href="./presentation-submission-guidelines.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Presentation Guidelines</a>
+            <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Registration</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="nav-link inline-flex items-center text-primary">
+            Committee
+            <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+          </button>
+          <div class="absolute left-0 top-full w-56 bg-white border border-gray-200 rounded-lg shadow-lg p-2 hidden group-hover:block group-focus-within:block z-50">
+            <a href="./committee.html#chairs" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm">Organizing Committee</a>
+            <a href="./technical-committee.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 text-sm text-primary">Technical Committee</a>
+          </div>
+        </div>
+        <a href="./plan-your-visit.html" class="nav-link">Plan Your Visit</a>
+        <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link">APAN62 Meeting</a>
+      </div>
+      <button id="open-menu" class="md:hidden text-gray-700" aria-label="Open menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[100] hidden flex-col">
+  <div class="flex justify-between items-center px-6 py-5 border-b">
+    <span class="text-2xl font-bold inline-flex items-center gap-3">
+      <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+      <span class="text-primary">APANConf 2026</span>
+    </span>
+    <button id="close-menu" class="text-gray-700" aria-label="Close menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1 space-y-6 text-lg">
+    <a href="./#keynote-speakers" class="nav-link mobile-link">Keynotes</a>
+    <a href="./tracks.html" class="nav-link mobile-link">Tracks</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Guidelines</p>
+    <a href="./author-guidelines.html" class="nav-link mobile-link">- Author Guidelines</a>
+    <a href="./camera-ready-guidelines.html" class="nav-link mobile-link">- Camera-Ready Guidelines</a>
+    <a href="./presentation-submission-guidelines.html" class="nav-link mobile-link">- Presentation Guidelines</a>
+    <a href="https://apan62.apan.net/registration/" target="_blank" rel="noopener" class="nav-link mobile-link">- Registration</a>
+    <p class="text-gray-500 uppercase tracking-wide text-sm">Committee</p>
+    <a href="./committee.html#chairs" class="nav-link mobile-link">- Organizing Committee</a>
+    <a href="./technical-committee.html" class="nav-link mobile-link">- Technical Committee</a>
+    <a href="./plan-your-visit.html" class="nav-link mobile-link">Plan Your Visit</a>
+    <a href="https://apan62.apan.net/" target="_blank" rel="noopener" class="nav-link mobile-link">APAN62 Meeting</a>
+  </div>
+</div>
+
+<section id="technical-committee" class="py-16 sm:py-20 bg-white scroll-mt-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-4">Technical Committee</h2>
+      <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+      <p class="max-w-4xl mx-auto text-gray-600 text-base sm:text-lg leading-8">
+        The Technical Program Committee (TPC) and Track Chairs guiding paper review, track coordination, and awards for APANConf 2026.
+      </p>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Technical Program and Awards Chairs</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg" alt="Dr. Damayanthi Herath" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Damayanthi Herath</h4>
+              <p class="text-primary font-semibold mb-2">TPC Chair</p>
+              <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Damayanthi Herath" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:damayanthiherath@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Damayanthi Herath" title="damayanthiherath@eng.pdn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://eng.pdn.ac.lk/cc/academic_staff/ms.s.h.i.p.rathnapala/img/iroshinira.png" alt="Ms. Iroshini Ratnapala" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Ms. Iroshini Ratnapala</h4>
+              <p class="text-primary font-semibold mb-2">TPC Co-Chair</p>
+              <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://eng.pdn.ac.lk/cc/academic_staff/ms.s.h.i.p.rathnapala/index.html#home" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Ms. Iroshini Ratnapala" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:iroshinir@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Ms. Iroshini Ratnapala" title="iroshinir@eng.pdn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://profiles.auckland.ac.nz/dev-singh/thumbnail" alt="Dr. Dev Singh" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Dev Singh</h4>
+              <p class="text-primary font-semibold mb-2">TPC Co-Chair</p>
+              <p class="text-gray-600">University of Auckland, New Zealand</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://profiles.auckland.ac.nz/dev-singh" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Dev Singh" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:dev.singh@auckland.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Dev Singh" title="dev.singh@auckland.ac.nz"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Track 1: Future Internet, R&amp;E Networks, and Infrastructure</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/suneth-namal-karunarathna.png" alt="Dr. Suneth Namal" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Suneth Namal</h4>
+              <p class="text-primary font-semibold mb-2">Track Chair</p>
+              <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="http://people.ce.pdn.ac.lk/staff/academic/suneth-namal-karunarathna/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Suneth Namal" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:namal@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Suneth Namal" title="namal@eng.pdn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="./prabhani.png" alt="Dr. Prabhani Liyanage" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Prabhani Liyanage</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.linkedin.com/in/prabhani-liyanage-301b96201" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Prabhani Liyanage" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:prabani@sjp.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Prabhani Liyanage" title="prabani@sjp.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Track 2: AI, Machine Learning, and Vision Systems</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&amp;user=TB4RYToAAAAJ&amp;citpid=5" alt="Dr. Surangika Ranathunga P" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Surangika Ranathunga P</h4>
+              <p class="text-primary font-semibold mb-2">Track Chair</p>
+              <p class="text-gray-600">Massey University, New Zealand</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.massey.ac.nz/massey/expertise/profile.cfm?stref=319722" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Surangika Ranathunga P" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:S.Ranathunga@massey.ac.nz" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Surangika Ranathunga P" title="S.Ranathunga@massey.ac.nz"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="./amirthalingam.png" alt="Prof. Amirthalingam Ramanan" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Prof. Amirthalingam Ramanan</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">University of Jaffna, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.csc.jfn.ac.lk/prof-a-ramanan/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Prof. Amirthalingam Ramanan" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:a.ramanan@univ.jfn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Prof. Amirthalingam Ramanan" title="a.ramanan@univ.jfn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="./kokul.png" alt="Dr. Kokul Thanikasalam" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Kokul Thanikasalam</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">University of Jaffna, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.csc.jfn.ac.lk/profile-dr-t-kokul/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Kokul Thanikasalam" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:kokul@univ.jfn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Kokul Thanikasalam" title="kokul@univ.jfn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Track 3: High-Performance, Cloud, and Distributed Computing</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="./darshana.png" alt="Dr. Darshana Jayasinghe" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Darshana Jayasinghe</h4>
+              <p class="text-primary font-semibold mb-2">Track Chair</p>
+              <p class="text-gray-600">University of Sydney, Australia</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.linkedin.com/in/darshana-jayasinghe" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Darshana Jayasinghe" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:darshana.jayasinghe@gmail.com" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Darshana Jayasinghe" title="darshana.jayasinghe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://www.nsbm.ac.lk/wp-content/uploads/elementor/thumbs/dr-Pabudi-qphqw8ni151lwulfzt26h75jrvs5vaf72c3edb5000.jpg" alt="Dr. Pabudi Abeyrathne" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Pabudi Abeyrathne</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">NSBM Green University, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.nsbm.ac.lk/staff/dr-pabudi-abeyrathne/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Pabudi Abeyrathne" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:pabudia@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Pabudi Abeyrathne" title="pabudia@eng.pdn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Track 4: Digital Applications in Health, Agriculture, Education, and Environment</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://people.ce.pdn.ac.lk/images/staff/academic-staff/kamalanath-samarakoon.png" alt="Prof. Kamalanath Samarakoon" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Prof. Kamalanath Samarakoon</h4>
+              <p class="text-primary font-semibold mb-2">Track Chair</p>
+              <p class="text-gray-600">University of Peradeniya, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="http://people.ce.pdn.ac.lk/staff/academic/kamalanath-samarakoon/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Prof. Kamalanath Samarakoon" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:kamalanath@eng.pdn.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Prof. Kamalanath Samarakoon" title="kamalanath@eng.pdn.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://www.seu.ac.lk/fas/Division%20of%20Computer%20science/jahan.jpg" alt="Dr. Akmal Jahan MAC" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Akmal Jahan MAC</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">South Eastern University, Sri Lanka</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://www.seu.ac.lk/fas/Division%20of%20Computer%20science/jahan.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Akmal Jahan MAC" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:akmaljahan@fas.seu.ac.lk" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Akmal Jahan MAC" title="akmaljahan@fas.seu.ac.lk"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-14">
+      <div class="mb-6 sm:mb-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-dark">Track 5: Policy, Ethics, and Regional Priorities in Digital Infrastructure</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://rajithv.com/images/profile.png" alt="Dr. Rajith Vidanarachchi" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Rajith Vidanarachchi</h4>
+              <p class="text-primary font-semibold mb-2">Track Chair</p>
+              <p class="text-gray-600">University of Melbourne, Australia</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://rajithv.com/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Rajith Vidanarachchi" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:rajith.v@unimelb.edu.au" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Rajith Vidanarachchi" title="rajith.v@unimelb.edu.au"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="flex items-start gap-4">
+            <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&amp;user=XU07nQwAAAAJ&amp;citpid=5" alt="Dr. Kasun Amarasinghe" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover object-top border border-gray-200 bg-white" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2228%22%20fill%3D%22%23f3f4f6%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2272%22%20r%3D%2234%22%20fill%3D%22%23cbd5e1%22/%3E%3Cpath%20d%3D%22M42%20172c8-30%2031-48%2058-48s50%2018%2058%2048%22%20fill%3D%22%23cbd5e1%22/%3E%3C/svg%3E';">
+            <div class="min-w-0 flex-1">
+              <h4 class="text-xl sm:text-2xl font-bold text-dark mb-1">Dr. Kasun Amarasinghe</h4>
+              <p class="text-primary font-semibold mb-2">Track Co-Chair</p>
+              <p class="text-gray-600">Carnegie Mellon University, USA</p>
+              <div class="flex items-center gap-3 mt-4">
+                <a href="https://lirneasia.net/people/kasun-amarasinghe/" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Profile for Dr. Kasun Amarasinghe" title="Profile"><i class="fa-solid fa-globe"></i></a>
+                <a href="mailto:amarasinghek@cmu.edu" class="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors" aria-label="Email Dr. Kasun Amarasinghe" title="amarasinghek@cmu.edu"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-gray-50 border-y border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-3">
+    <span class="text-sm font-semibold uppercase tracking-wide text-gray-600">Technical Sponsor</span>
+    <img src="./IEEE_logo.png" alt="IEEE Logo" class="h-14 w-auto" />
+  </div>
+</section>
+
+<footer id="footer" class="bg-dark text-white py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+      <p class="text-gray-400 text-sm sm:text-base">&copy; <span id="currentYear"></span> APANConf 2026. All rights reserved.</p>
+      <div class="flex flex-wrap sm:flex-nowrap items-center gap-4 sm:gap-6 text-sm sm:text-base">
+        <a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primary/90 transition-opacity opacity-0 pointer-events-none z-50" title="Back to Top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+  const openMenuBtn = document.getElementById('open-menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (openMenuBtn && closeMenuBtn && mobileMenu) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    });
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+
+  const backToTopBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+      backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+    } else {
+      backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+      backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
+  backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+</body>
+</html>
